@@ -9,7 +9,6 @@ RUN apt-get update && \
     apt-get install -y \
     curl \
     gnupg \
-    jq \
     && rm -rf /var/lib/apt/lists/*
 
 RUN curl -LO https://github.com/ipfs/kubo/releases/download/v0.30.0/kubo_v0.30.0_linux-$ARCH.tar.gz && \
