@@ -25,3 +25,5 @@ else
     echo "Error: Failed to extract TotalSize."
     exit 1
 fi
+
+MACHINE_HASH=$(xxd -p .cartesi/image/hash | tr -d '\n')
