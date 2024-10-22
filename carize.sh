@@ -26,4 +26,4 @@ else
     exit 1
 fi
 
-MACHINE_HASH=$(xxd -p .cartesi/image/hash | tr -d '\n')
+MACHINE_HASH=$(xxd -p ../.cartesi/image/hash | tr -d '\n')
