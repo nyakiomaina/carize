@@ -18,3 +18,10 @@ else
     echo "Error: Failed to generate JSON file."
     exit 1
 fi
+
+if jq -r '.TotalSize' /output/output.car.json > /output/output.dagsize; then
+    echo "TotalSize extracted to output.dagsize successfully!"
+else
+    echo "Error: Failed to extract TotalSize."
+    exit 1
+fi
