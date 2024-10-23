@@ -12,7 +12,7 @@ CID=$(cat /output/output.cid)
 
 ipfs dag export "$CID" > /output/output.car
 
-if ipfs --enc=json dag stat "$CID" &progress=false > /output/output.car.json; then
+if ipfs --enc=json dag stat "$CID" > /output/output.car.json; then
     echo "CAR and JSON files successfully created!"
 else
     echo "Error: Failed to generate JSON file."
