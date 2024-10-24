@@ -19,8 +19,8 @@ else
     exit 1
 fi
 
-if jq -r '.TotalSize' /output/output.car.json > /output/output.size; then
-    echo "TotalSize extracted to output.size successfully!"
+if jq -r '.CumulativeSize' /output/output.car.json > /output/output.size; then
+    echo " Cumulative size extracted to output.size successfully!"
 else
     echo "Error: Failed to extract TotalSize."
     exit 1
